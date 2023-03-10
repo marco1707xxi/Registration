@@ -1,0 +1,237 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Tydek - Creative Agency Landing Page Tamplet</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Premium Bootstrap v5.1.3 Landing Page Template" />
+    <meta name="keywords" content="bootstrap v5.1.3, premium, marketing, multipurpose" />
+    <meta content="Themesdesign" name="author" />
+
+    <!-- fevicon -->
+    <link rel="shortcut icon" href="{% static 'images/favicon.ico'%}">
+
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css'%}" type="text/css" />
+
+    <!-- animation -->
+    <link rel="stylesheet" href="{% static 'css/aos.css'%}" />
+
+    <!-- slider -->
+    <link rel="stylesheet" href="{% static 'css/swiper-bundle.min.css'%}" />
+
+    <!-- Icon -->
+    <link rel="stylesheet" href="{% static 'css/materialdesignicons.min.css'%}" type="text/css" />
+
+    <!-- css -->
+    <link rel="stylesheet" href="{% static 'css/style.min.css'%}" type="text/css" />
+
+    <!-- colors -->
+    <link href="{% static 'css/colors/default.css'%}" rel="stylesheet" type="text/css" id="color-opt" />
+
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="71">
+
+    <nav class="navbar navbar-expand-lg fixed-top navbar-white navbar-custom sticky bg-white" id="navbar">
+        <div class="container">
+            <!-- LOGO -->
+            <a class="navbar-brand text-uppercase" href="index-1.html">
+                <img class="logo-light" src="{% static 'images/logo-light.png'%}" alt="" height="30">
+                <img class="logo-dark" src="{% static 'images/logo-dark.png'%}" alt="" height="30">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="mdi mdi-menu"></span>
+                <!-- toggle button -->
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav nav-text mx-auto" id="navbar-navlist">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/job2/">|Kurslarimiz va Guruxlarimiz|</a>
+                    </li> <li class="nav-item">
+                        <a class="nav-link active" href="/employee2/">o'quvchilar|</a>
+                    </li> <li class="nav-item">
+                        <a class="nav-link active" href="/home/">Home2</a>
+                    </li>
+                    
+                </ul>
+                <!-- Button trigger modal -->
+                <a href="/login/" class="btn btn-primary nav-btn">
+                    Sign Up
+                </a>
+                <!-- Nav btn -->
+            </div>
+        </div><!-- End container -->
+    </nav>
+    <!-- End Navbar -->
+
+    <!-- Start Home -->
+    <section class="section home home-1" id="home">
+        <div class="left-img">
+            <img src="{% static 'images/banner-shape.png'%}" alt="">
+        </div>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-7">
+                    <div class="home-heading">
+                        <h1 class="mb-3">Bizning Mahsulot<span class="home-text">Biznesingiz Uchun&nbsp;</span> Muvaffaqiyat 
+                            <span class="typewrite text-primary d-none d-sm-inline-block" data-period="2000"
+                                data-type='[ "Kaliti" ]'>
+                                <span class="wrap"></span> </span>
+                        </h1>
+                    </div>
+                    <p class="">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget
+                        dolor.
+                        Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur</p>
+                    <div class="home-btn hstack gap-2 flex-column d-sm-block mb-5 mb-sm-0">
+                        <a class="btn btn-primary me-1" href="javascript:void(0)">Request Free Demo</a>
+                        <a class="modal-btn" href="javascript:void(0)" data-bs-toggle="modal"
+                            data-bs-target=".watchvideomodal">
+                            <span class="avatar-sm">
+                                <span class="btn btn-primary avatar-title btn-icon">
+                                    <i class="mdi mdi-play"></i>
+                                </span>
+                            </span>
+                        </a>
+                        <!-- Modal -->
+                        <div class="modal fade bd-example-modal-lg watchvideomodal" data-keyboard="false" tabindex="-1"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-dialog modal-lg">
+                                <div class="modal-content home-modal p-1">
+                                    <div class="modal-header border-0">
+                                        <button type="button" class="btn-close btn-close-dark" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <video id="VisaChipCardVideo" class="video-box" controls="">
+                                        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                                        <!--Browser does not support <video> tag -->
+                                    </video>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END MODAL -->
+                    </div>
+                </div><!-- end col-->
+                <div class="col-lg-5">
+                    <div class="">
+                        <img src="{% static 'images/home-1.png'%}" class="home-img" alt="">
+                    </div>
+                </div><!-- col end -->
+            </div><!-- end row-->
+        </div>
+        <!--end container-->
+    </section>
+    <!-- End Home -->
+
+    <!-- Client logo start -->
+    <section class="section client-logo">
+        <div class="container">
+            <div class="row ">
+                <div class="col-lg-12">
+                    <div class="client-list">
+                        <div class="row justify-content-around g-4">
+                            <div class="col-md-2 col-6">
+                                <img class="img-fluid" src="{% static 'images/logo/brand-logo-1.png'%}" alt="">
+                            </div><!-- End col-->
+                            <div class="col-md-2 col-6">
+                                <img class="img-fluid" src="{% static 'images/logo/brand-logo-3.png'%}" alt="">
+                            </div><!-- End col-->
+                            <div class="col-md-2 col-6">
+                                <img class="img-fluid" src="{% static 'images/logo/brand-logo-2.png'%}" alt="">
+                            </div><!-- End col-->
+                            <div class="col-md-2 col-6">
+                                <img class="img-fluid" src="{% static 'images/logo/brand-logo-3.png'%}" alt="">
+                            </div><!-- End col-->
+                        </div><!-- End row-->
+                    </div>
+                </div><!-- end col -->
+            </div>
+        </div>
+    </section>
+    <!-- Client logo end -->
+
+
+    <!-- FOOTER-ALT -->
+    <div class="footer-alt pt-4 pb-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="text-center">
+                        <p class="mb-0 fs-15 text-white">©
+                            <script>document.write(new Date().getFullYear())</script> Tydek Design by
+                            <i class="mdi mdi-heart text-danger"></i> Themesdesign
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END FOOTER-ALT -->
+
+    <!-- Style switcher -->
+    <div id="style-switcher" onclick="toggleSwitcher()" style="left: -189px;">
+        <div>
+            <h6>Select your color</h6>
+            <ul class="pattern list-unstyled mb-0">
+                <li>
+                    <a class="color1" href="javascript: void(0);" onclick="setColor('default')"></a>
+                </li>
+                <li>
+                    <a class="color2" href="javascript: void(0);" onclick="setColor('success')"></a>
+                </li>
+                <li>
+                    <a class="color3" href="javascript: void(0);" onclick="setColor('warning')"></a>
+                </li>
+                <li>
+                    <a class="color4" href="javascript: void(0);" onclick="setColor('blue')"></a>
+                </li>
+                <li>
+                    <a class="color5" href="javascript: void(0);" onclick="setColor('info')"></a>
+                </li>
+                <li>
+                    <a class="color6" href="javascript: void(0);" onclick="setColor('purple')"></a>
+                </li>
+            </ul>
+        </div>
+        <div class="bottom">
+            <a href="javascript: void(0);" class="settings rounded-end"><i class="mdi mdi-cog mdi-spin"></i></a>
+        </div>
+    </div>
+    <!-- end switcher-->    
+
+    <!--start back-to-top-->
+    <button onclick="topFunction()" id="back-to-top">
+        <i class="mdi mdi-arrow-up"></i>
+    </button>
+    <!--end back-to-top-->
+
+    <!--Custom js-->
+    <script src="{% static 'js/counter.js'%}"></script>
+
+    <!--Bootstrap Js-->
+    <script src="{% static 'js/bootstrap.bundle.min.js'%}"></script>
+
+    <!-- animation -->
+    <script src="{% static 'js/aos.js'%}"></script>
+
+    <!-- swiper js -->
+    <script src="{% static 'js/swiper-bundle.min.js'%}"></script>
+
+    <!-- contact -->
+    <script src="{% static 'js/contact.js'%}"></script>
+
+    <!-- App Js -->
+    <script src="{% static 'js/app.js'%}"></script>
+
+</body>
+
+</html>
